@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root{
+  font-size: 10px;
+  --primary-color: #edf2fc;
+  --secondary-color: #212121;
+}
+.dark-theme{
+  --primary-color: #000106;
+  --secondary-color:#fff; 
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+nav {
+  width: 85%;
+  height: 12rem;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  width: 12rem;
+  cursor: pointer;
+}
+
+nav img#theme-change{
+  width: 30px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: right;
+  width: 40%;
+  flex: 1;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+  transition: all 0.1s;
+  font-size: 1.6rem;
+  margin: 0 15px;
+}
+
+
+
+nav ul li a:hover {
+  color: #ff4321;
+  font-weight: bolder;
+  border-bottom: 4px solid #ff4321;
+}
+
+
+
+.info{
+  margin-top: 15rem;
+  margin-left: 10rem;
+}
+.info h1{
+  color: var(--secondary-color);
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+}
+h1 span{
+  color: #ff4321;
+}
+.info p{
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+}
+.info a {
+  font-size: 2rem;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  color: var(--primary-color);
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.info a:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-section{
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  width: 45%;
+  height: 80%;
+}
+.image-section img{
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: all 1s;
+}
+.image-section img.back-img{
+  width: 40rem;
+  height: 45rem;
+  top: 6rem;
+}
+
+.image-section:hover .back-img{
+  top: 5rem;
+  width: 45rem;
+}
+.image-section:hover .main-img{
+  left: 54%;
+}
+
+.social-links{
+  margin-left: 8%;
+  margin-top: 100px;
+}
+.social-links a{
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-right: 20px;
+}
+.social-links a:hover{
+  color: #ff4321;
+}
